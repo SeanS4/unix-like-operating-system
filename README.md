@@ -22,7 +22,7 @@ The filesystem is then stress tested by adding and removing three files at once 
 
 The system runs in QEMU, which emulates a computer implementing the 64-bit RISC-V ISA. This allows the operating system to boot and run in a virtual environment without requiring a physical machine with a RISC-V processor. In the demo, programs such as `hello` and `trek` are loaded from the filesystem and executed as user processes, with control returning to the shell after each program finishes. The shell also demonstrates piping and redirection, showing that program output can be routed directly into another process or stored in a file instead of simply being printed. These commands make the interaction between user processes and kernel services visible rather than only showing that individual programs can launch.
 
-See [Architecture](docs/architecture.md) for a deeper explanation of the kernel design.
+See [docs/architecture](docs/architecture.md) for a deeper explanation of the kernel design.
 
 ## Supported Shell Commands
 
@@ -46,16 +46,16 @@ Pipes and redirection use the same file-descriptor and uniform I/O interface as 
 
 ## Verification
 
-Development combined targeted component tests with full system testing under QEMU, while GNU GDB was used to trace failures between C and assembly code. Many of the hardest bugs appeared only after otherwise functional subsystems were integrated, including a forked child losing its process identity. See [Verification](docs/verification.md) for more.
+Development combined targeted component tests with full system testing under QEMU, while GNU GDB was used to trace failures between C and assembly code. Many of the hardest bugs appeared only after otherwise functional subsystems were integrated, including a forked child losing its process identity. See [docs/verification](docs/verification.md) for more.
 
 ## Repository Structure
 
-| Directory | Contents                                                      |
-| --------- | ------------------------------------------------------------- |
-| `src/`    | Provided and modified source code |
-| `docs/`   | Architecture and verification documentation                   |
-| `images/` | Diagrams and screenshots                                      |
-| `media/`  | Demo video                                                    |
+| Directory | Contents |
+| --- | --- |
+| [`src/`](src/) | Provided and modified source code |
+| [`docs/`](docs/) | Architecture and verification documentation |
+| [`images/`](images/) | Diagrams and screenshots |
+| [`media/`](media/) | Demo video |
 
 ## Scope
 
