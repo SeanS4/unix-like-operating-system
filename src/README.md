@@ -4,10 +4,10 @@ The operating system was developed on top of a framework supplied by a universit
 
 ## Source Directory
 
-| Path                      | Contents                          |
-| ------------------------- | --------------------------------- |
-| `src/provided/`           | Provided files                    |
-| `src/modified/sys/`       | Kernel and core OS implementation |
-| `src/modified/sys/dev/`   | Device drivers                    |
-| `src/modified/usr/`       | Uniform input/output              |
-| `src/modified/usr/progs/` | Shell and user programs           |
+| Path | Contents |
+| --- | --- |
+| [`src/provided/`](src/provided/) | Provided files |
+| [`src/modified/sys/`](src/modified/sys/) | Kernel and core OS implementation |
+| [`src/modified/sys/dev/`](src/modified/sys/dev/) | Device drivers |
+| [`src/modified/usr/`](src/modified/usr/) | Uniform input/output |
+| [`src/modified/usr/progs/`](src/modified/usr/progs/) | Shell and user programs |
