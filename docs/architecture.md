@@ -19,7 +19,7 @@ To give user programs persistent access to files, the kernel connects its filesy
 Files, pipes, and device drivers are integrated through a uniform I/O interface, so the rest of the system can interact with them using the same basic operations. Each component handles its own internal behavior, while user programs and the shell do not need separate logic for every source or destination of data. This makes the system easier to extend and lets features such as redirection and piping work naturally across different kinds of I/O.
 
 <p align="center">
-  <img src="images/kernel_structure.png" alt="Unix-like operating system kernel architecture" width="700">
+  <img src="../images/kernel_structure.png" alt="Unix-like operating system kernel architecture" width="400">
   <br>
   <em>Course-provided architecture representation of the overall kernel structure and I/O layers.</em>
 </p>
