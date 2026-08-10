@@ -46,7 +46,7 @@ Pipes and redirection use the same file-descriptor and uniform I/O interface as 
 
 ## Verification
 
-Development combined targeted component tests with full system testing under QEMU, while GNU GDB was used to trace failures between C and assembly code. Many of the hardest bugs appeared only after otherwise functional subsystems were integrated, including a forked child losing its process identity and additonal issues involving pathname parsing and piped user input. See [Verification](docs/verification.md) for more.
+Development combined targeted component tests with full system testing under QEMU, while GNU GDB was used to trace failures between C and assembly code. Many of the hardest bugs appeared only after otherwise functional subsystems were integrated, including a forked child losing its process identity. See [Verification](docs/verification.md) for more.
 
 ## Repository Structure
 
