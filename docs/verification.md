@@ -5,7 +5,7 @@ Verification used a heavily modified version of the provided test suite. Tests w
 GNU GDB was used alongside QEMU to inspect the trap path during system calls. In the example below, execution is stopped in `handle_umode_exception()` immediately after a user process executes `ecall`. The exception cause is `8`, confirming an environment call from U-mode, and execution can then be followed into `handle_syscall()`. The surrounding RISC-V instructions and supervisor CSRs were inspected at the same breakpoint to verify the processor state saved during trap entry.
 
 <p align="center">
-  <img src="images/gdb_trap_debugging.png" alt="GDB inspection of a user-mode system call trap under QEMU" width="800">
+  <img src="../images/gdb_trap_debugging.png" alt="GDB inspection of a user-mode system call trap under QEMU" width="600">
   <br>
   <em>GDB inspection of the U-mode system call trap path and saved supervisor state.</em>
 </p>
