@@ -2,7 +2,7 @@
 
 ## Process and Virtual Memory
 
-To keep user programs isolated from the kernel and from one another, each process runs in its own Sv39 virtual address space and can request privileged services only through the system-call interface. A system call traps into supervisor mode, where the kernel handles the request before restoring the program’s saved state and returning it to user mode. Processes can be duplicated with fork, replaced with new programs through exec, and synchronized with wait, while timer interrupts let the scheduler preempt a running process so multiple programs can share the processor.
+To keep user programs isolated from the kernel and from one another, each process runs in its own Sv39 virtual address space and can request privileged services only through the system call interface. A system call traps into supervisor mode, where the kernel handles the request before restoring the program’s saved state and returning it to user mode. Processes can be duplicated with fork, replaced with new programs through exec, and synchronized with wait, while timer interrupts let the scheduler preempt a running process so multiple programs can share the processor.
 
 <p align="center">
   <img src="../images/virtual_memory_layout.png" alt="Virtual memory layout" width="400">
