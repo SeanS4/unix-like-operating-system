@@ -18,7 +18,7 @@ Running `wc` counts the lines, words, and bytes in the file, and rerunning the o
 
 The filesystem is then stress tested by adding and removing three files at once while also demonstrating `xargs` and additional pipe functionality. Finally, an invalid argument is tested to show that the kernel can cleanly handle incorrect inputs.
 
-## Overview
+## Design Overview
 
 The system runs in QEMU, which emulates a computer implementing the 64-bit RISC-V ISA. This allows the operating system to boot and run in a virtual environment without requiring a physical machine with a RISC-V processor. In the demo, programs such as `hello` and `trek` are loaded from the filesystem and executed as user processes, with control returning to the shell after each program finishes. The shell also demonstrates piping and redirection, showing that program output can be routed directly into another process or stored in a file instead of simply being printed. These commands make the interaction between user processes and kernel services visible rather than only showing that individual programs can launch.
 
