@@ -6,7 +6,7 @@ The kernel is written primarily in C modules that manage higher-level behavior l
 
 ## Demo
 
-[Demo Video](https://github.com/user-attachments/assets/your-demo-video-link)
+https://github.com/user-attachments/assets/9c96a547-1c42-4f29-a086-7240fca30e08
 
 ## Demo Walkthrough
 
