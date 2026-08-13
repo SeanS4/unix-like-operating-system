@@ -15,7 +15,7 @@ To keep user programs isolated from the kernel and from one another, each proces
 To give user programs persistent access to files, the kernel connects its filesystem to an emulated disk through several storage layers. The VirtIO disk driver submits block requests to the drive and wakes waiting threads when the device signals that an operation is complete. A memory cache keeps recently used blocks in RAM, while KTFS organizes the underlying storage into files using inodes that track each file and where its data is located. As files grow, their inode can reach additional data through indirect blocks of pointers, allowing KTFS to support files much larger than the inode could reference directly.
 
 <p align="center">
-  <img src="../images/ktfs_layout.png" alt="KTFS filesystem layout" width="400">
+  <img src="../images/ktfs_layout.png" alt="KTFS filesystem layout" width="500">
   <br>
   <em>Course-provided architecture representation of the KTFS filesystem layout.</em>
 </p>
